@@ -1,0 +1,135 @@
+p:hover {
+  animation: fadeIn 3.1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card-detail {
+  grid-column-end: span 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+}
+
+.card-detail:hover {
+  transform: translateY(-7px);
+}
+
+.card-header {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+}
+
+.card-body-img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: calc(-10px - 5px);
+  background-color: white;
+}
+
+.card-body-abilities {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.card-body-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.card-body-title span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-footer-social {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-footer-social p {
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .card-detail {
+    grid-column-end: span 6;
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .card-detail {
+    grid-column-end: span 6;
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card-detail {
+    grid-column-end: span 6;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-detail {
+    grid-column-end: span 6;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card-detail {
+    grid-column-end: span 12;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-detail {
+    grid-column-end: span 6;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .card-detail {
+    grid-column-end: span 6;
+    width: 70%;
+  }
+}

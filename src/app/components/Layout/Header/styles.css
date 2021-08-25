@@ -1,0 +1,25 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  /*position: fixed;*/
+  justify-content: center;
+  align-items: baseline;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: rgb(192, 45, 26);
+  color: #fff;
+}
+
+.responsive {
+  width: 950px;
+  max-width: 25%;
+  height: auto;
+}
+
+.center-logo {
+  text-align: center;
+  margin-right: auto;
+  width: 900px;
+  height: auto;
+}
