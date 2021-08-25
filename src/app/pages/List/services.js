@@ -6,8 +6,3 @@ export function getPokes(page) {
   // Authorization head should be fulfilled in interceptor.
   return axios.get(`${REQUEST_POKE}?limit=${page}`);
 }
-
-export function getDetalles(id) {
-  // Authorization head should be fulfilled in interceptor.
-  return axios.get(`${REQUEST_POKE}${id}`);
-}

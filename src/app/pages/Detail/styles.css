@@ -85,6 +85,13 @@ p:hover {
   letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 1960px) {
+  .card {
+    grid-column-end: span 6;
+    width: 20%;
+  }
+}
+
 @media only screen and (max-width: 1500px) {
   .card-detail {
     grid-column-end: span 6;
